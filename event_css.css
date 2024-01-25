@@ -1,0 +1,195 @@
+@import url(https://unpkg.com/open-props/open-props.min.css);
+  @import url(https://unpkg.com/open-props/normalize.min.css);
+header{
+
+display:flex;
+width:100%;
+}
+body{
+    background-image: url("img/back2.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.contai {
+		margin:0%;
+	padding:0%;
+	display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	height:100%;
+    background-image: url("img/back2.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+	color:white;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+	color:#1ee3cf;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+.lv {
+  display: grid;
+  place-items: center;
+  background-image: url("img/back2.jpg");
+}
+
+.lv ul {
+  padding: 0;
+  display: inline-grid;
+  grid-auto-flow: column;
+  list-style-type: none;
+  grid-template-columns: auto repeat(3, calc((var(--active, 0) * 130px) + 10px));
+  transition: grid-template-columns 0.35s var(--ease-elastic-1);
+  transition: grid-template-columns 0.35s var(--ease-elastic-1), -ms-grid-columns 0.35s var(--ease-elastic-1);
+}
+
+
+
+.lv ul li {
+  display: grid;
+  justify-content: end;
+  z-index: calc(var(--count) - var(--index));
+}
+
+.lv nav {
+  position: relative;
+}
+
+.lv nav > button {
+  position: absolute;
+  left: 0;
+  z-index: var(--count);
+}
+
+.lv a {
+  background: hsl(0 0% 60% / 0.18);
+  display: inline-block;
+  padding: var(--size-2) var(--size-4);
+  border-radius: var(--radius-5);
+  margin: 0;
+  color: var(--gray-0);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-0);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  transition: color 0.2s, background 0.2s;  
+}
+
+.lv a:visited {
+  color: var(--gray-0);
+}
+
+
+.lv span {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-template-columns: 16px 1fr;
+  gap: 0.25rem;
+}
+
+.lv li:is(
+  :nth-of-type(2),
+  :nth-of-type(3),
+  :nth-of-type(4)
+)
+.lv span {
+  opacity: var(--active, 0);
+}
+
+.lv li:is(
+  :nth-of-type(2),
+  :nth-of-type(3),
+  :nth-of-type(4)
+) a:is(:hover, :focus) {
+  background: var(--gray-0);
+  color: var(--gray-12);
+}
+
+.lv a:focus-visible {
+  outline-color: transparent;
+}
+
+.lv ul:is(:focus-within, :hover) {
+  --active: 1;
+}

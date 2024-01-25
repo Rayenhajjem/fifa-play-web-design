@@ -1,0 +1,396 @@
+body {
+  padding:0%; border:0 px;
+  background:none repeat scroll 0 0 #eeeeee;
+  font-size:16px;
+  font-family:"Open Sans",Arial,sans-serif;
+  color:#444;
+  background-color:#053c4f;
+}
+.hea{
+	background-color:#053c4f;
+	border:0 px;
+	width:100%;
+}
+.topnav {
+width:100%;
+height:10%;
+}
+.imgtopnav{
+float:left;
+margin-top:15px;
+}
+.topnav1{
+	margin-top:20px;
+	float:right;
+	padding: 1%;
+}
+.ultopnav {
+  margin: 15px ;
+  padding: 0 ;
+  list-style: none ;
+  text-align: center ;
+}
+.ultopnav li {
+  display: inline ;
+  margin-right: 1px ;
+  color: #002633 ;
+  background: #c00 ;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.ultopnav li a {
+  padding: 4px 20px ;
+  background:#053c4f ;
+  color: #81b7c9;
+  border: 1px solid #053c4f;
+  font: 20px "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+}
+.ultopnav li a:hover, .ultopnav li a:focus, .ultopnav li a:active {
+  background: red ;
+  color:white;
+  text-decoration: underline ;
+  padding:10px 15px;
+}
+.news{
+width:100%;
+
+}
+.newstop{
+width:100%;
+height:auto;
+}
+.news1{
+	margin-top:5%;
+	background-image:url(img/image1.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	padding-top:5%;
+	width:100%;
+	height:100%;
+}
+.news12{
+	background-image:url(img/image2.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	padding-top:5%;
+	width:100%;
+	height:100%;
+}
+.news13{
+	background-image:url(img/OIP3.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	padding-top:5%;
+	width:100%;
+	height:100%;
+}
+.textnews{
+	background-color:red;
+	width:50%;
+	height:10%;
+	font-family: Archivo Black;
+	font-weight: bold;
+    font-size: 50px;
+	color:white;
+	margin-bottom:5%;
+	padding-left:5%;
+	padding-top:3%;
+
+}
+.textnews1{
+	background-color:white;
+	width:40%;
+	height:10%;
+	font-family: georgia;
+    font-size: 30px;
+	color:#444;
+	text-align:center;
+	position: relative;
+    top: -12%;
+	padding-left:1%;
+	padding-top:2%;
+}
+.newsmd{ 
+width:100%;
+height:60%;
+}
+.newss{
+margin-bottom:-7%;
+float:left;
+width:60%;
+background-color:;
+color:white;
+margin-left:-6%;
+}
+#hnav {
+margin-bottom:8%;
+margin-top:8%;
+margin-right:8%;
+margin-left:8%;
+padding-bottom:10%;
+ list-style: none ;
+
+}
+#hnav li {
+  display: inline ;
+  color: #002633 ;
+ background: #348498;opacity:0.5;
+}
+#hnav li a {
+
+  padding: 8% 10%;
+  padding-bottom:10%;
+  background:#348498;
+  color: #81b7c9;
+  font: 25px "Trebuchet MS",Arial,sans-serif ;
+  line-height: 10px ;
+  text-align: center ;
+  text-decoration: none ;
+}
+#hnav1 {
+margin-bottom:8%;
+margin-top:8%;
+margin-right:8%;
+margin-left:8%;
+padding-bottom:10%;
+ list-style: none ;
+
+}
+#hnav1 li {
+  display: inline ;
+  color: #002633 ;
+ background:  #41d4ec;opacity:0.5;
+}
+#hnav1 li a {
+
+  padding: 8% 10%;
+  padding-bottom:10%;
+  background: #41d4ec;
+  color: #ebf9fc;
+  font: 25px "Trebuchet MS",Arial,sans-serif ;
+  line-height: 10px ;
+  text-align: center ;
+  text-decoration: none ;
+}
+
+.md1img{
+height:100%;
+float:right;
+margin-right:1%;
+}
+#Gal{
+	text-align:center;
+	color:white;
+	width:100%;
+	height:auto;
+}
+.GalTitre{
+margin-left:30%;
+width:30%;
+background-color:#9e1935;
+}
+.ph1 {
+margin-left:10%;
+width:80%;
+height:40%;
+border:2px solid #4d94a3;
+transition: height 3s ease 200ms, width 3s ease 200ms,margin-left 3s ease 200ms;
+}
+.ph1:hover {
+margin-left:0%;
+ width: 100%;
+ height:70%;
+}
+
+.tt {
+position:relative;
+bottom:20%;
+color:white;
+margin-left:15%;
+width:73%;
+height:7%;
+text-align:center;
+background-color:#4d94a3;
+}
+#Stat{
+	text-align:center;
+	color:white;
+	width:100%;
+	height:auto;
+}
+.StatTitre{
+margin-left:23%;
+width:50%;
+background-color:#9e1935;
+}
+.statStitre{
+	font-family:verdana;
+	font-size:30px;
+	color:#9e1935;
+	text-decoration:2px dotted underline;
+	background-color:white;
+	width:50%;
+}
+.Statplayr{
+	margin-top:5%;
+	width:100%;
+	height:auto;
+}
+.SStatplayer{
+	
+	float:left;
+	width:25%;
+	font-family:verdana;
+	font-size:25px;
+	color:white;
+	background-color:#9e1935;
+}
+.pL1{
+	margin-left:-25%;
+	height:55%;
+	transition: height 3s ease 200ms, width 3s ease 200ms,margin-left 3s ease 200ms;
+}
+.tPL{
+	text-align:center;
+    font-family:verdana;
+	font-size:20px;
+	color:#9e1935;
+	text-decoration:2px dotted underline;
+	background-color:white;
+	width:15%;
+	
+}
+.PL1:hover {
+margin-left:-25%;
+width:22%;
+height:70%;
+}
+.pL{
+	margin-left:-25%;
+	height:55%;
+	transition: height 3s ease 200ms, width 3s ease 200ms,margin-left 3s ease 200ms;
+}
+.PL:hover {
+margin-left:-25%;
+width:32%;
+height:70%;
+}
+hr{
+	width:70%
+}
+.foot{
+	border:1px solid #f9fe00;
+	
+	background-color: #030101;
+	width: 100%;
+	text-align: left;
+	padding-top:3%;
+	overflow: hidden;
+}
+.ftg{
+	float: left;
+	margin-right:5%;
+	width:80%;
+}
+
+.lg1{
+	float:left;
+	width:20%;
+	height:20%;
+	margin-left:3%;
+	margin-top:3%;
+}
+.lg2{
+	float:right;
+	width:20%;
+	height:20%;
+	margin-right:50%;
+	margin-top:3%;
+}
+.cop{
+	width:25%;
+	color:#beeef0;
+	font-family:Agency FB;
+	font-style:italic;
+	font-size:15px;
+	margin-top:15%;
+	margin-left:18%;
+}
+.ftr{
+	width:50%;
+	float: right;
+margin-top:-15%;
+}
+
+.ftr p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+.foot form{
+	display: inline-block;
+}
+
+.foot form input, .foot form textarea{
+	display: block;
+	border-radius: 5px;
+	background-color:  #567e93;
+	resize: none;
+	border: none;
+	font-family: verdana;
+	font-size: 14px;
+	color:  #860909;
+	width: 400px;
+	padding: 20px;
+}
+.foot form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.foot form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.foot form button{
+	border-radius: 10px;
+	background-color: #3e687e;
+	color: #ffffff;
+	border: none;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+.foot form button:hover{
+background-color:  white;
+color: #3e687e;
+}
+.fb{
+float:left;
+margin-top:15px;
+margin-left:2%;
+}
+.ln{
+float:left;
+margin-top:-41px;
+margin-left:5%;
+}
+.fb1{
+float:left;
+margin-top:5px;
+margin-left:2%;
+}
+.ln1{
+float:left;
+margin-top:-41px;
+margin-left:5%;
+}
+.Yt{
+float:left;
+margin-top:-80px;
+margin-left:0%;
+}

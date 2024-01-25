@@ -1,0 +1,113 @@
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+
+     <link rel="stylesheet" href="inscri_css.css">
+
+	 <script type="text/javascript">
+	 function verif(){
+	if(formul.nom.value == "" || formul.prenom.value == "" || formul.email.value == ""){
+alert("verifier votre coordonnées")
+	}
+	else
+	{	
+	alert( "Enregistrement réussi");
+alert( "votre nom : "+formul.nom.value+"\n votre prenom :"+formul.prenom.value+"\n votre email : "+formul.email.value);
+window.location.href="event.html";
+
+	}
+	}
+	</script>
+</head>
+
+<body>
+  <main>
+      <header class="header-section fixed-top">
+        <div class="container-fluid">
+          <!-- logo -->
+          <a class="site-logo" href="index.html">
+            <img src="img/ACCC.png" width="300px" height="90px" alt="">
+          </a>
+          <div class="user-panel">
+            <a href="inscription.html">Inscrire</a> 
+          </div>
+          <!-- responsive -->
+          <div class="nav-switch">
+            <i class="fa fa-bars"></i>
+          </div>
+          <!-- site menu -->
+          <nav class="main-menu">
+            <ul>
+              <li><a href="Acceuil.html">Accueil</a></li>
+                    <li><a href="event.html">Evènements</a></li>
+            <li><a href="st.html">Statistiques</a></li>
+            <li><a href="aide.html">Aide</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+      <h1 class="title">FIFA WORLD CUP™: LIVE</h1>
+      <p>Disputez les rencontres à venir ou réécrivez l’histoire de matchs passés de la FIFA World Cup 2022™ pour changer la destination du célèbre trophée, 
+	  avec les effectifs authentiques, les équipes, les statistiques, le classement des groupes, etc.</p>
+	  		  <video  width="80%" height="50%" controls autoplay muted loop>
+  <source src="son/2.mp4" type="video/mp4">
+</video>
+ 
+        </div>
+        <div class="col-md-6">
+    <section class="inscri">
+      <p class="inscripara">Merci de remplir Vos coordonnées</p>
+      <form name="formul" action="" Method="post" class="inscri-form" >
+        <div class="form-input">
+          <input type="text" name="nom" id="nom" placeholder="nom" required>
+         
+        </div>
+
+        <div class="form-input">
+          <input type="text" name="prenom" id="prenom" placeholder="prenom" required>
+          <span>!</span>
+          <p class="warning">ce champs est obligatoire</p>
+        </div>
+
+        <div class="form-input">
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <span>!</span>
+          <p class="warning">ce champs est obligatoire</p>
+        </div>
+ <div class="form-input">
+ <label><b>Type event</b> : </label>
+    <input type="radio" name="Event" value="Event1" id="1"/>Event1
+    <input type="radio" name="Event" value="Event2" id="2"/>Event2
+          <span>!</span>
+          <p class="warning">ce champs est obligatoire</p>
+        </div>
+        <input class="btn" type="button" value="INSCRIVES-VOUS" onClick="verif();"/>
+		
+        <p class="form-term">vous acceptez Nos <span> Règlement</span> </p>
+
+  </main>
+      </form>
+    </section>
+	</div>
+  </section>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

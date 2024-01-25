@@ -1,0 +1,214 @@
+body {
+      display: flex;
+      justify-content: center;
+      padding: 48px 0;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      color: white;
+      background-color: #053c4f;
+    }
+
+    main {
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 48px;
+    }
+.topnav1{
+	margin-top:20px;
+	float:right;
+	padding: 1%;
+}
+.ultopnav {
+  margin: 15px ;
+  padding: 0 ;
+  list-style: none ;
+  text-align: center ;
+}
+.ultopnav li {
+  display: inline ;
+  margin-right: 1px ;
+  color: #002633 ;
+  background: #c00 ;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.ultopnav li a {
+  padding: 4px 20px ;
+  background:#053c4f ;
+  color: #81b7c9;
+  border: 1px solid #053c4f;
+  font: 20px "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+}
+.ultopnav li a:hover, .ultopnav li a:focus, .ultopnav li a:active {
+  background: red ;
+  color:white;
+  text-decoration: underline ;
+  padding:10px 15px;
+}
+    .title {
+      margin-top: 100px;
+      padding: 16px;
+      font-size: 28px;
+    }
+
+    .inscri {
+      margin-top: 330px;
+      width: 100%;
+    
+    }
+
+    .inscripara{
+      padding: 16px 80px;
+      margin-bottom: 28px;
+      border-radius: 13px;
+      box-shadow: 0 8px 0px rgba(0 0 0/0.15);
+      background-color:#81b7c9;
+      text-align: center;
+    }
+
+    .inscri-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 19.2px;
+      border-radius: 13px;
+      box-shadow: 0 8px 0px rgba(0 0 0/0.15);
+      color: #b9b6d3;
+      background-color: white;
+    }
+
+    .form-input {
+      width: 100%;
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .form-input span {
+      position: absolute;
+      top: 10%;
+      right: 0;
+      padding: 0 10.4px;
+      border-radius: 50%;
+      background-color: #ff7a7a;
+      color: white;
+      display: none;
+    }
+
+    .form-input.warning span {
+      display: inline-block;
+    }
+
+    .form-input input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      border: 2px solid rgba(185, 182, 211, 0.25);
+      border-radius: 8px;
+      font-weight: 600;
+      color: #3e3c49;
+    }
+
+    .form-input input:focus {
+      outline: none;
+      border: 2px solid #b9b6d3;
+    }
+
+    .form-input.warning input {
+      border: 2px solid #ff7a7a;
+    }
+
+    .form-input p {
+      margin: 3.2px 12px 0 0;
+      display: none;
+      font-size: 12px;
+      text-align: right;
+      font-style: italic;
+      color: #ff7a7a;
+    }
+
+    .form-input.warning p {
+      display: block;
+    }
+
+    .btn {
+      cursor: pointer;
+      width: 100%;
+      padding: 16px;
+      margin-bottom: 16px;
+      border: none;
+      border-bottom: 5px solid #4654a5;
+      border-radius: 10px;
+      background-color: #81b7c9;
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .btn:hover {
+      background-color: #4654a5;
+    }
+
+    .form-term {
+      margin-bottom: 192px;
+      font-size: 12.8px;
+      text-align: center;
+    }
+
+    .form-term span {
+      font-weight: 700;
+      color: #ff7a7a;
+    }
+	label{
+		color:#414349;
+	}
+    
+    @media (min-width: 768px) {
+      body {
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      main {
+        max-width: 100vw;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .intro {
+        align-items: flex-start;
+        text-align: left;
+        width: 45%;
+        margin-right: 16px;
+      }
+
+      .title {
+        padding: 0;
+        margin-bottom: 32px;
+        font-size: 48px;
+        line-height: 20px;
+      }
+
+      .sign-up {
+        width: 45%;
+      }
+
+      .sign-up-form {
+        padding: 28px;
+      }
+
+      .sign-up-form input {
+        padding-left: 24px;
+      }
+    }
